@@ -1,140 +1,78 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Un uomo amico dell'uomo</title>
 
-<meta name="description"
-      content="Un percorso di riflessione sulla natura umana, la dignità, la libertà, la giustizia e il significato della vita.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <style>
-
-:root{
-    --bg:#f5f5f5;
-    --card:#ffffff;
-    --text:#222;
-    --accent:#3c5a99;
-    --border:#ddd;
-}
-
-*{
-    box-sizing:border-box;
-}
 
 body{
     margin:0;
-    font-family:Georgia, serif;
-    background:var(--bg);
-    color:var(--text);
+    font-family:Georgia,serif;
     line-height:1.8;
+    background:#f7f7f7;
+    color:#222;
 }
 
 header{
     background:#222;
     color:white;
-    padding:80px 20px;
     text-align:center;
+    padding:80px 20px;
 }
 
 header h1{
-    margin:0;
     font-size:3rem;
-}
-
-header p{
-    max-width:800px;
-    margin:20px auto 0;
-    font-size:1.2rem;
+    margin-bottom:20px;
 }
 
 .container{
-    max-width:1200px;
+    max-width:1400px;
     margin:auto;
     display:flex;
-    gap:30px;
-    padding:40px 20px;
 }
 
-aside{
+nav{
     width:320px;
+    padding:20px;
+    background:white;
     position:sticky;
-    top:20px;
-    align-self:flex-start;
-    background:var(--card);
-    padding:25px;
-    border-radius:10px;
-    border:1px solid var(--border);
+    top:0;
+    height:100vh;
+    overflow-y:auto;
+    border-right:1px solid #ddd;
 }
 
-aside h2{
-    margin-top:0;
-}
-
-aside ul{
-    list-style:none;
-    padding:0;
-    margin:0;
-}
-
-aside li{
-    margin-bottom:10px;
-}
-
-aside a{
+nav a{
+    display:block;
+    padding:6px 0;
     text-decoration:none;
-    color:var(--accent);
+    color:#2b5fae;
 }
 
 main{
     flex:1;
-}
-
-.card{
-    background:var(--card);
-    border:1px solid var(--border);
-    border-radius:10px;
-    padding:35px;
-    margin-bottom:30px;
-}
-
-.card h2{
-    margin-top:0;
-}
-
-.btn{
-    display:inline-block;
-    padding:12px 24px;
-    background:var(--accent);
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
-}
-
-.chapter-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:20px;
+    padding:40px;
 }
 
 .chapter{
     background:white;
-    border:1px solid var(--border);
-    border-radius:10px;
-    padding:20px;
+    padding:40px;
+    margin-bottom:40px;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
 
-.chapter h3{
-    margin-top:0;
+.chapter h2{
+    border-bottom:1px solid #ddd;
+    padding-bottom:10px;
 }
 
 footer{
     text-align:center;
-    padding:50px 20px;
+    padding:40px;
     background:#222;
     color:white;
 }
@@ -145,13 +83,14 @@ footer{
     flex-direction:column;
 }
 
-aside{
+nav{
     width:100%;
+    height:auto;
     position:relative;
 }
 
-header h1{
-    font-size:2rem;
+main{
+    padding:20px;
 }
 
 }
@@ -162,548 +101,164 @@ header h1{
 <body>
 
 <header>
-    <h1>Un uomo amico dell'uomo</h1>
 
-    <p>
-        Un percorso di riflessione sulla natura umana,
-        sulla dignità della persona, sui valori universali,
-        sulla libertà, sulla giustizia e sul significato autentico della vita.
-    </p>
+<h1>UN UOMO AMICO DELL'UOMO</h1>
 
-    <br>
-
-    <a href="#inizia" class="btn">
-        Inizia la lettura
-    </a>
+<p>
+Un percorso di riflessione sulla dignità umana,
+sulla libertà, sulla giustizia e sul significato della vita.
+</p>
 
 </header>
 
 <div class="container">
 
-    <aside>
+<nav>
 
-        <h2>Indice</h2>
+<h3>Indice</h3>
 
-        <ul>
+<a href="#c1">LA SITUAZIONE DEL MONDO ATTUALE</a>
+<a href="#c2">LE RISORSE UMANE</a>
+<a href="#c3">LA NOSTRA VERA NATURA</a>
+<a href="#c4">QUALI SONO GLI ASPETTI CHE VANNO MIGLIORATI?</a>
+<a href="#c5">IL BENE E IL MALE: SOGGETTIVITA’ E OGGETTIVITA'</a>
+<a href="#c6">CHE COS’E’ LA VITA: ALLA RICERCA DEL SUO VERO SENSO</a>
+<a href="#c7">IL RISPETTO PER LA VITA</a>
+<a href="#c8">LA VITA IDEALE</a>
+<a href="#c9">I VALORI UMANI</a>
+<a href="#c10">CHE COS’E’ LA LIBERTA’</a>
+<a href="#c11">CHE COS’E’ LA GIUSTIZIA</a>
+<a href="#c12">LA VOLONTA’ DI DIO E LA VOLONTA’ DELL’UOMO: DUE REALTA’ CHE POSSONO VIVERE IN SINTONIA</a>
+<a href="#c13">LA POTENZA DELLA PREGHIERA NELLA NOSTRA VITA</a>
+<a href="#c14">L’UOMO IDEALE</a>
+<a href="#c15">L’AMORE E LA SESSUALITA’</a>
+<a href="#c16">IL COMPITO DELLA PSICOLOGIA</a>
+<a href="#c17">LA MEDICINA, LA FARMACIA E LE SCIENZE INFERMIERISTICHE: QUAL’E’ IL COMPITO FONDAMENTALE DI QUESTE 3 IMPORTANTI SCIENTIFICHE</a>
+<a href="#c18">LO SVILUPPO DELLA LETTERATURA, CINEMA E MUSICA</a>
+<a href="#c19">QUALI SONO LE COSE CHE CI ACCOMUNANO, E QUALI INVECE QUELLE CHE CI DIFFERENZIANO?</a>
+<a href="#c20">IL RIACQUISTO DELLA DIGNITA’ UMANA</a>
+<a href="#c21">CONCLUSIONE</a>
 
-            <li><a href="capitoli/01.html">1. La situazione del mondo attuale</a></li>
-            <li><a href="capitoli/02.html">2. Le risorse umane</a></li>
-            <li><a href="capitoli/03.html">3. La nostra vera natura</a></li>
-            <li><a href="capitoli/04.html">4. Aspetti da migliorare</a></li>
-            <li><a href="capitoli/05.html">5. Il bene e il male</a></li>
-            <li><a href="capitoli/06.html">6. Che cos'è la vita</a></li>
-            <li><a href="capitoli/07.html">7. Il rispetto per la vita</a></li>
-            <li><a href="capitoli/08.html">8. La vita ideale</a></li>
-            <li><a href="capitoli/09.html">9. I valori umani</a></li>
-            <li><a href="capitoli/10.html">10. Che cos'è la libertà</a></li>
-            <li><a href="capitoli/11.html">11. Che cos'è la giustizia</a></li>
-            <li><a href="capitoli/12.html">12. Volontà di Dio e volontà dell'uomo</a></li>
-            <li><a href="capitoli/13.html">13. La potenza della preghiera</a></li>
-            <li><a href="capitoli/14.html">14. L'uomo ideale</a></li>
-            <li><a href="capitoli/15.html">15. L'amore e la sessualità</a></li>
-            <li><a href="capitoli/16.html">16. Il compito della psicologia</a></li>
-            <li><a href="capitoli/17.html">17. Medicina, farmacia e infermieristica</a></li>
-            <li><a href="capitoli/18.html">18. Letteratura, cinema e musica</a></li>
-            <li><a href="capitoli/19.html">19. Ciò che ci accomuna</a></li>
-            <li><a href="capitoli/20.html">20. Il riacquisto della dignità umana</a></li>
-            <li><a href="capitoli/21.html">21. Conclusione</a></li>
+</nav>
 
-        </ul>
+<main>
 
-    </aside>
+<section id="c1" class="chapter">
+<h2>LA SITUAZIONE DEL MONDO ATTUALE</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 1</strong></p>
+</section>
 
-    <main>
+<section id="c2" class="chapter">
+<h2>LE RISORSE UMANE</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 2</strong></p>
+</section>
 
-        <section id="inizia" class="card">
+<section id="c3" class="chapter">
+<h2>LA NOSTRA VERA NATURA</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 3</strong></p>
+</section>
 
-            <h2>Presentazione</h2>
+<section id="c4" class="chapter">
+<h2>QUALI SONO GLI ASPETTI CHE VANNO MIGLIORATI?</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 4</strong></p>
+</section>
 
-            <p>
-                Questo libro nasce dal desiderio di riflettere
-                sulle principali questioni che accompagnano
-                l'esistenza dell'essere umano:
-                il bene e il male, la libertà, la giustizia,
-                il valore della vita, la spiritualità,
-                l'amore e la dignità della persona.
-            </p>
+<section id="c5" class="chapter">
+<h2>IL BENE E IL MALE: SOGGETTIVITA’ E OGGETTIVITA'</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 5</strong></p>
+</section>
 
-            <p>
-                Attraverso i diversi capitoli, il lettore viene
-                accompagnato in un percorso di approfondimento
-                volto a comprendere meglio se stesso,
-                la società contemporanea e le possibilità
-                di sviluppo umano e spirituale.
-            </p>
+<section id="c6" class="chapter">
+<h2>CHE COS’E’ LA VITA: ALLA RICERCA DEL SUO VERO SENSO</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 6</strong></p>
+</section>
 
-        </section>
+<section id="c7" class="chapter">
+<h2>IL RISPETTO PER LA VITA</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 7</strong></p>
+</section>
 
-        <section class="card">
+<section id="c8" class="chapter">
+<h2>LA VITA IDEALE</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 8</strong></p>
+</section>
 
-            <h2>Estratto di esempio</h2>
+<section id="c9" class="chapter">
+<h2>I VALORI UMANI</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 9</strong></p>
+</section>
 
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse vitae massa sed sapien cursus feugiat.
-                Nulla facilisi. Praesent ultrices nunc vel eros
-                volutpat, vitae tristique orci tristique.
-            </p>
+<section id="c10" class="chapter">
+<h2>CHE COS’E’ LA LIBERTA’</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 10</strong></p>
+</section>
 
-            <p>
-                Curabitur vitae nibh vitae nunc feugiat vulputate.
-                Vestibulum ante ipsum primis in faucibus orci luctus
-                et ultrices posuere cubilia curae;
-                Vivamus porta, lectus nec finibus malesuada,
-                lectus lacus sollicitudin metus,
-                non ultrices lorem elit vel risus.
-            </p>
+<section id="c11" class="chapter">
+<h2>CHE COS’E’ LA GIUSTIZIA</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 11</strong></p>
+</section>
 
-            <p>
-                Fusce eget magna nec sem malesuada tincidunt.
-                Integer at consequat libero.
-                Sed efficitur, libero nec interdum malesuada,
-                purus erat vulputate ligula,
-                eget consequat augue elit non augue.
-            </p>
+<section id="c12" class="chapter">
+<h2>LA VOLONTA’ DI DIO E LA VOLONTA’ DELL’UOMO: DUE REALTA’ CHE POSSONO VIVERE IN SINTONIA</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 12</strong></p>
+</section>
 
-        </section>
+<section id="c13" class="chapter">
+<h2>LA POTENZA DELLA PREGHIERA NELLA NOSTRA VITA</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 13</strong></p>
+</section>
 
-        <section class="card">
+<section id="c14" class="chapter">
+<h2>L’UOMO IDEALE</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 14</strong></p>
+</section>
 
-            <h2>Capitoli del libro</h2>
+<section id="c15" class="chapter">
+<h2>L’AMORE E LA SESSUALITA’</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 15</strong></p>
+</section>
 
-            <div class="chapter-grid">
+<section id="c16" class="chapter">
+<h2>IL COMPITO DELLA PSICOLOGIA</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 16</strong></p>
+</section>
 
-                <div class="chapter">
-                    <h3>La situazione del mondo attuale</h3>
-                    <p>Analisi della società contemporanea.</p>
-                </div>
+<section id="c17" class="chapter">
+<h2>LA MEDICINA, LA FARMACIA E LE SCIENZE INFERMIERISTICHE: QUAL’E’ IL COMPITO FONDAMENTALE DI QUESTE 3 IMPORTANTI SCIENTIFICHE</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 17</strong></p>
+</section>
 
-                <div class="chapter">
-                    <h3>Le risorse umane</h3>
-                    <p>Le potenzialità presenti in ogni persona.</p>
-                </div>
+<section id="c18" class="chapter">
+<h2>LO SVILUPPO DELLA LETTERATURA, CINEMA E MUSICA</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 18</strong></p>
+</section>
 
-                <div class="chapter">
-                    <h3>La nostra vera natura</h3>
-                    <p>Una riflessione sull'identità dell'essere umano.</p>
-                </div>
+<section id="c19" class="chapter">
+<h2>QUALI SONO LE COSE CHE CI ACCOMUNANO, E QUALI INVECE QUELLE CHE CI DIFFERENZIANO?</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 19</strong></p>
+</section>
 
-                <div class="chapter">
-                    <h3>Il bene e il male</h3>
-                    <p>Soggettività e oggettività dei valori morali.</p>
-                </div>
+<section id="c20" class="chapter">
+<h2>IL RIACQUISTO DELLA DIGNITA’ UMANA</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 20</strong></p>
+</section>
 
-                <div class="chapter">
-                    <h3>La libertà</h3>
-                    <p>Il significato autentico della libertà umana.</p>
-                </div>
+<section id="c21" class="chapter">
+<h2>CONCLUSIONE</h2>
+<p><strong>INSERIRE QUI TESTO CAPITOLO 21</strong></p>
+</section>
 
-                <div class="chapter">
-                    <h3>La giustizia</h3>
-                    <p>Principi e finalità della giustizia.</p>
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
+</main>
 
 </div>
 
 <footer>
 
-    <p>
-        © 2026 - Un uomo amico dell'uomo
-    </p>
+<p>
+© 2026 - Un uomo amico dell'uomo
+</p>
 
 </footer>
 
 </body>
 </html>
-Ti consiglio però di fare un passo ulteriore: creare un template unico per i capitoli (chapter.html) da duplicare 21 volte. In questo modo ogni capitolo avrà:
-
-barra di avanzamento lettura,
-
-modalità scura,
-
-pulsanti precedente/successivo,
-
-indice laterale,
-
-salvataggio automatico dell'ultima posizione di lettura.
-
-Questa soluzione rende il sito molto più simile a un ebook professionale che a una semplice raccolta di pagine HTML.
-
-
-allora dammi il template html per i capitoli
-
-Questo è un template completo per un capitolo. Puoi salvarlo come 01.html, poi duplicarlo per tutti gli altri capitoli cambiando titolo, contenuto e link precedente/successivo.
-
-Include:
-
-Layout ottimizzato per la lettura
-
-Indice laterale
-
-Dark Mode
-
-Barra di avanzamento lettura
-
-Pulsanti Precedente / Indice / Successivo
-
-Salvataggio automatico della posizione di lettura
-
-Responsive per smartphone
-
-<!DOCTYPE html>
-<html lang="it">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Capitolo 1 - La situazione del mondo attuale</title>
-
-<style>
-
-:root{
-    --bg:#f5f5f5;
-    --card:#ffffff;
-    --text:#222;
-    --border:#dddddd;
-    --accent:#2c5aa0;
-}
-
-.dark{
-    --bg:#111;
-    --card:#1d1d1d;
-    --text:#f2f2f2;
-    --border:#444;
-    --accent:#78a9ff;
-}
-
-*{
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    margin:0;
-    background:var(--bg);
-    color:var(--text);
-    font-family:Georgia, serif;
-    line-height:1.9;
-    transition:.3s;
-}
-
-#progress{
-    position:fixed;
-    top:0;
-    left:0;
-    width:0%;
-    height:5px;
-    background:var(--accent);
-    z-index:9999;
-}
-
-.wrapper{
-    max-width:1400px;
-    margin:auto;
-    display:flex;
-}
-
-.sidebar{
-    width:300px;
-    min-height:100vh;
-    padding:30px;
-    border-right:1px solid var(--border);
-    position:sticky;
-    top:0;
-}
-
-.sidebar h2{
-    margin-top:0;
-}
-
-.sidebar a{
-    text-decoration:none;
-    color:var(--accent);
-}
-
-.sidebar ul{
-    list-style:none;
-    padding:0;
-}
-
-.sidebar li{
-    margin-bottom:8px;
-}
-
-.content{
-    flex:1;
-    padding:60px;
-}
-
-.content h1{
-    margin-top:0;
-    font-size:2.5rem;
-}
-
-.content p{
-    text-align:justify;
-    margin-bottom:1.4em;
-}
-
-.chapter-nav{
-    margin-top:60px;
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    gap:15px;
-}
-
-.chapter-nav a{
-    text-decoration:none;
-    color:white;
-    background:var(--accent);
-    padding:12px 20px;
-    border-radius:6px;
-}
-
-.toolbar{
-    margin-top:20px;
-}
-
-button{
-    cursor:pointer;
-    border:none;
-    padding:10px 15px;
-    border-radius:5px;
-    background:var(--accent);
-    color:white;
-}
-
-blockquote{
-    border-left:4px solid var(--accent);
-    margin:20px 0;
-    padding-left:20px;
-    font-style:italic;
-}
-
-@media(max-width:1000px){
-
-.wrapper{
-    flex-direction:column;
-}
-
-.sidebar{
-    width:100%;
-    min-height:auto;
-    position:relative;
-    border-right:none;
-    border-bottom:1px solid var(--border);
-}
-
-.content{
-    padding:25px;
-}
-
-.content h1{
-    font-size:2rem;
-}
-
-}
-
-</style>
-
-</head>
-
-<body>
-
-<div id="progress"></div>
-
-<div class="wrapper">
-
-    <aside class="sidebar">
-
-        <h2>Un uomo amico dell'uomo</h2>
-
-        <div class="toolbar">
-            <button onclick="toggleTheme()">
-                Modalità Chiara/Scura
-            </button>
-        </div>
-
-        <hr>
-
-        <h3>Indice</h3>
-
-        <ul>
-
-            <li><a href="../index.html">Home</a></li>
-
-            <li><a href="01.html">1. La situazione del mondo attuale</a></li>
-            <li><a href="02.html">2. Le risorse umane</a></li>
-            <li><a href="03.html">3. La nostra vera natura</a></li>
-            <li><a href="04.html">4. Aspetti da migliorare</a></li>
-            <li><a href="05.html">5. Il bene e il male</a></li>
-            <li><a href="06.html">6. Che cos'è la vita</a></li>
-            <li><a href="07.html">7. Il rispetto per la vita</a></li>
-            <li><a href="08.html">8. La vita ideale</a></li>
-            <li><a href="09.html">9. I valori umani</a></li>
-            <li><a href="10.html">10. La libertà</a></li>
-            <li><a href="11.html">11. La giustizia</a></li>
-            <li><a href="12.html">12. Volontà di Dio e volontà dell'uomo</a></li>
-            <li><a href="13.html">13. La potenza della preghiera</a></li>
-            <li><a href="14.html">14. L'uomo ideale</a></li>
-            <li><a href="15.html">15. L'amore e la sessualità</a></li>
-            <li><a href="16.html">16. Il compito della psicologia</a></li>
-            <li><a href="17.html">17. Medicina e professioni sanitarie</a></li>
-            <li><a href="18.html">18. Letteratura, cinema e musica</a></li>
-            <li><a href="19.html">19. Ciò che ci accomuna</a></li>
-            <li><a href="20.html">20. Dignità umana</a></li>
-            <li><a href="21.html">21. Conclusione</a></li>
-
-        </ul>
-
-    </aside>
-
-    <main class="content">
-
-        <h1>La situazione del mondo attuale</h1>
-
-        <p>
-            Inserire qui il testo del capitolo.
-        </p>
-
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Donec eget sapien sed justo bibendum tristique.
-            Aliquam erat volutpat. Curabitur id massa non velit
-            consequat hendrerit.
-        </p>
-
-        <p>
-            Vestibulum ante ipsum primis in faucibus orci luctus
-            et ultrices posuere cubilia curae; Mauris gravida
-            volutpat lectus, sed scelerisque libero luctus at.
-        </p>
-
-        <blockquote>
-            Qui puoi inserire una citazione importante tratta dal libro.
-        </blockquote>
-
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse potenti. Pellentesque habitant morbi tristique
-            senectus et netus et malesuada fames ac turpis egestas.
-        </p>
-
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed non neque in odio convallis aliquet.
-            Praesent suscipit nisl vitae eros varius,
-            a viverra lorem tempor.
-        </p>
-
-        <div class="chapter-nav">
-
-            <a href="../index.html">
-                ← Indice
-            </a>
-
-            <a href="02.html">
-                Capitolo successivo →
-            </a>
-
-        </div>
-
-    </main>
-
-</div>
-
-<script>
-
-/* Barra avanzamento */
-
-window.addEventListener("scroll", () => {
-
-    const winScroll =
-        document.documentElement.scrollTop ||
-        document.body.scrollTop;
-
-    const height =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
-
-    const scrolled =
-        (winScroll / height) * 100;
-
-    document.getElementById("progress").style.width =
-        scrolled + "%";
-});
-
-/* Dark mode */
-
-function toggleTheme(){
-
-    document.body.classList.toggle("dark");
-
-    if(document.body.classList.contains("dark")){
-        localStorage.setItem("theme","dark");
-    }else{
-        localStorage.setItem("theme","light");
-    }
-}
-
-if(localStorage.getItem("theme")==="dark"){
-    document.body.classList.add("dark");
-}
-
-/* Salvataggio posizione lettura */
-
-const pageId =
-window.location.pathname;
-
-window.addEventListener("beforeunload", () => {
-
-    localStorage.setItem(
-        "scroll_" + pageId,
-        window.scrollY
-    );
-
-});
-
-window.addEventListener("load", () => {
-
-    const saved =
-    localStorage.getItem(
-        "scroll_" + pageId
-    );
-
-    if(saved){
-
-        setTimeout(() => {
-
-            window.scrollTo(
-                0,
-                parseInt(saved)
-            );
-
-        }, 300);
-
-    }
-
-});
-
-</script></body>
-</html>
-
-
-
-
